@@ -1,4 +1,12 @@
 # Tugas 2 OOP dan MYSQL
+## File Menu Utama
+pada file ini berisi codingan pembuatan menu yang dilengkapi dengan HTML dan CSS
+#### Kode Program :
+![menu utama](https://github.com/user-attachments/assets/a3699a2c-60a4-4797-9f6d-81399573d2b1)
+#### Output :
+![output menu utama](https://github.com/user-attachments/assets/2074b3f0-985c-48d7-82c3-1589e625ef25)
+
+
 ## File Koneksi
 Pada File ini berisi kode yang digunakan untuk membuat koneksi ke database MySQL menggunakan konsep OOP (Object-Oriented Programming) dalam PHP. Kode ini memiliki beberapa kelas yang digunakan untuk mengelola data jurnal, rincian jurnal, dan jurnal detail, yang semuanya terhubung ke database MySQL.
 Berikut penjelasan dari tiap bagian:
@@ -146,6 +154,7 @@ Jika ada parameter $id, query akan difilter berdasarkan id, dan hasilnya dikemba
 Koneksi ini dibuat untuk memudahkan akses data dari beberapa tabel di database secara modular dan terstruktur menggunakan OOP. Dengan membagi fungsi ke dalam beberapa kelas, kode menjadi lebih mudah di-maintain, dan perubahan atau penambahan fungsi dapat dilakukan tanpa harus mengulang penulisan koneksi database.
 Secara keseluruhan, setiap kelas yang dibuat (misalnya journals, journal_details, journal) menggunakan metode koneksi yang sama dari kelas induk database, sehingga ketika koneksi diinisiasi, setiap kelas bisa memanfaatkan koneksi tersebut tanpa harus membuatnya ulang.
 #### Kode Program :
+![koneksi](https://github.com/user-attachments/assets/d143e2f1-8bf7-4216-9115-809ae61d4495)
 
 
 
@@ -197,6 +206,11 @@ File ini dibuat dengan fungsi untuk
 - Menampilkan data tersebut dalam bentuk tabel HTML di browser.
 - Menyediakan tombol yang mengarah kembali ke halaman menu utama.
 ### Kode Program :
+![journals](https://github.com/user-attachments/assets/ef66e9c3-3e55-4e97-83d2-9115ffa64917)
+#### Output :
+![output journals](https://github.com/user-attachments/assets/d60888bf-c605-4eee-a548-742c90812ed7)
+
+
 
 ## File Journals_detail
 File merupakan file dari class turunan journals_detail yang saya buat dengan tujuan untuk menampilkan data dari tabel journals_detail yang ada di MYSQL yang sudah terkoneksi pada file koneksi sebelumnya.
@@ -248,6 +262,10 @@ File ini dibuat dengan fungsi untuk
 - Menampilkan data tersebut dalam bentuk tabel HTML di browser.
 - Menyediakan tombol yang mengarah kembali ke halaman menu utama.
 ### Kode Program :
+![journals_detail](https://github.com/user-attachments/assets/77a9a374-1180-4370-8cec-74a3aa39767b)
+#### Output :
+![output journals detail](https://github.com/user-attachments/assets/e1ab421f-0ff2-45a7-aa3f-30d63f0b5afc)
+
 
 
 ## File Tampil Journals (Polymorphism)
@@ -292,8 +310,9 @@ $no = 1; // Mulai dari nomor urut 1
 #### kesimpulan :
 Proses polymorhphism ini digunakan untuk menampilkan salah satu data yang terdapat pada table journals yang ada pada databases.
 #### Kode Program :
-
-
+![tampil_journals](https://github.com/user-attachments/assets/2d276825-85ae-4e65-88f0-fea17d987a1b)
+#### Output :
+![poly journals](https://github.com/user-attachments/assets/6b0a479b-c006-412e-8a89-3a52584b1b7c)
 
 
 
@@ -338,6 +357,10 @@ $rincian_journal = $isi_journals->TampilkanData(4);  // Kita filter datanya paka
 #### kesimpulan :
 Proses polymorhphism ini digunakan untuk menampilkan salah satu data yang terdapat pada table journals yang ada pada databases.
 #### Kode Program :
+![tampil_journals_detail](https://github.com/user-attachments/assets/82925a31-dbc9-4a3c-b821-f467850528df)
+#### Output :
+![poly journals detail](https://github.com/user-attachments/assets/6eaf2bae-85de-409c-8fe9-1e297addda9b)
+
 
 
 
